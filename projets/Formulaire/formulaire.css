@@ -1,0 +1,39 @@
+body{
+    width:500px;
+    margin: auto;
+    background: url('fd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+}
+h1{
+    text-align: center;
+}
+fieldset{
+    width: 400px;
+    padding:20px;
+    font-size:20px;   
+}
+input{
+    margin:2px;
+}
+textarea{
+    width:300px;
+    height:200px;
+}
+
+@media all and (max-width:800px){
+
+    body{
+        width:auto;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+}

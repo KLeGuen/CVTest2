@@ -1,0 +1,55 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="commentaires">
+    <h1>Formulaire</h1>
+
+        <form  onsubmit="envoyerCommentaire(event)" method="post" action="">
+
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+
+                <label for="nom">Votre nom:</label><input class="input" type="text" name="nom" id="nom" placeholder="Nom" size="20"maxlength="10"><br>
+                <label for="prenom">Votre prénom:</label><input class="input" type="text" name="nom" id="prenom" placeholder="Prenom"size="20" maxlength="10"/><br>
+                <label for="email">Votre email:</label><input class="input" type="email" name="email" id="email" placeholder="email"size="30"/><br>
+                <label for="date">Votre date de naissance:</label><input class="input" type="date" name="date" id="date"/><br>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Autres informations</legend>
+
+                <p>Couleur préférée:<br>
+                    <label for="bleu">Bleu</label><input type="radio" name="couleur" value="bleu" id="bleu" /><br>
+                    <label for="rouge">Rouge</label><input type="radio" name="couleur" value="rouge" id="rouge" /><br>
+                    <label for="bleu">Noir</label><input type="radio" name="couleur" value="noir" id="noir" /><br>
+                </p>
+
+                <label for="commentaire">Commentaires:</label><br>
+                <textarea class="input" name="commentaire" id="commentaire"></textarea><br>
+        
+
+            </fieldset>
+
+            <input type="submit" value="ENVOYER" />
+
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="formulaire.js"></script>
+
+</body>
+
+</html>

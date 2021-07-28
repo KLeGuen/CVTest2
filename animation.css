@@ -1,0 +1,348 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+section{
+    height: 100vh;
+    color: white;
+    scroll-snap-align:start;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+
+.container{
+  /*  scroll-padding: 10%;*/
+    scroll-snap-type:y mandatory  ;  /* y proximity*/
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+.un{
+   
+    background: url(image/ecran2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.id{
+    width: 220px;
+    height: 280px;
+   
+}
+
+.coordonne img:hover{
+    transform: rotate(20deg);
+}
+
+.un .coordonne{
+   padding-top:20px;
+   
+}
+
+.un .coordonne img{
+  margin:10px;
+  width: 40px;
+  height:40px;
+  ;   
+ } 
+
+
+.deux{
+
+    color:black;
+    background:url(image/perspective-exterior-nobody-empty-box.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly; 
+    align-items: center;
+    text-align: center;
+}
+
+.deux p{
+  padding: 5px;
+    font-style: italic;
+    transition: transform ease-in-out .5s;
+     
+}
+
+.deux li{
+    padding:5px;
+}
+
+.deux h1 {
+    font-size:1.4rem;
+    padding-bottom: 20px;
+}
+
+
+.trois{
+    background:url(image/25101.jpg) ;
+    background-size: cover;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size:0.8rem;
+  
+}
+
+.trois h1{
+    font-size:1.4rem;
+    padding-bottom:10px;
+}
+   
+.trois h3{
+     padding:6px;
+   
+}
+
+.trois li{
+    padding: 2px;
+}
+
+.trois p{
+font-style: italic;
+padding: 2px;
+}
+
+
+.quatre{
+    background:url(image/yu.jpg);
+    background-size: cover;
+
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align: center;
+    /*height: 150vh;*/
+}
+.quatre .cpt{
+    width: 90%;
+    height:90%;
+}
+.quatre .cpt2{
+  width:70%;
+  height:70%;
+}
+.quatre h1{
+    padding-bottom: 30px;
+    font-size:1.4rem;
+    
+}
+
+
+.cinq{
+    background:url(image/perspective-exterior-nobody-empty-box.jpg);
+    background-size: cover;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:0.9rem;
+    
+}
+.cinq h1{
+    font-size:1.4rem;
+    padding-bottom: 20px;
+    
+}
+
+.cinq li{
+    margin-top: 20px;
+}
+
+.cinq img:hover{
+    transform: rotate(20deg);
+}
+
+
+.six{
+    background:url(image/real.jpg);
+    background-size: cover;
+    color:black;
+
+                                                /*background-color: teal;*/
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size:0.9rem;
+   
+}
+
+.six h1{
+    font-size:1.4rem;
+    padding-bottom:20px;
+}
+
+.six h1#dl{
+    padding-top: 20px;
+        
+}
+
+.six img{
+    margin:3px;
+    width: 40px;
+    height:40px;
+         
+}
+
+.six img:hover{
+    transform: rotate(20deg);  
+}
+
+.six li{
+    padding:3px;
+    
+}
+
+.six article{
+    margin:-100px
+}
+  
+.six button {
+    padding: 7px 10px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;   
+}
+
+.six button:hover {
+          border-top-color: #f5f5f5;
+          background: #000000;
+          color: #ffffff;  
+}
+ 
+/* Mise en place des média queries: largeur de 1000px*/
+@media all and (min-width:1000px) and (min-height:800px){
+
+
+.id{
+    transform: scale(1.1) ;
+}
+
+
+.un{
+    font-size:1.3rem;
+   
+    
+}
+
+.un .coordonne img{
+    margin:20px;
+    width: 70px;
+    height:70px;  
+} 
+
+
+.deux {
+   font-size: 1.5rem;
+
+}
+
+.deux p{
+    padding:20px;
+}
+
+.deux h1 {
+    padding-bottom: 70px;
+    font-size:2rem;
+}
+
+
+.trois{
+    font-size:1.4rem;
+}
+
+.trois h1{
+    font-size:2rem;
+    padding-bottom:10px;
+}
+
+.trois h3{
+    font-size: 1.4rem;
+    padding-top:15px;
+   
+}
+
+.trois ul{
+    padding-top:10px;
+}
+
+.trois p {
+    padding:6px;
+}
+
+
+
+.quatre h1{
+    font-size:2rem;
+}
+
+.quatre .cpt{
+    width: 100%;
+    height:100%;
+}
+
+.quatre .cpt2{
+  width:70%;
+  height:70%;
+}
+
+
+.cinq{
+    font-size: 1.5rem;
+}
+
+.cinq h1{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.cinq li#cv{
+    margin-top: 50px;
+}
+
+
+.six{
+    font-size:1.5rem;
+}
+
+.six h1{
+   font-size:2rem;
+}
+
+.six img{
+    width: 60px;
+    height:60px;
+          
+   } 
+
+}
